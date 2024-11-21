@@ -12,7 +12,7 @@ Laboratuvar çalışanlarının hasta raporlarını yönetebileceği ve arama ya
 - DTO kullanımı ve Hibernate ile dinamik sorgular.
 
 ### Kullanılan Teknolojiler
-- Java 17
+- Java 23
 - Spring Boot (Data JPA, Web)
 - PostgreSQL
 - Lombok, MapStruct, Maven
@@ -45,7 +45,7 @@ A backend application to manage and search patient reports.
 - Uses DTOs and dynamic queries with Hibernate.
 
 ### Technologies Used
-- Java 17
+- Java 23
 - Spring Boot (Data JPA, Web)
 - PostgreSQL
 - Lombok, MapStruct, Maven
