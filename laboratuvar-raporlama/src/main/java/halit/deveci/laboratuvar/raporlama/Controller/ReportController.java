@@ -43,11 +43,6 @@ public class ReportController {
         return ResponseEntity.ok(reportDTO); // HTTP 200 OK
     }
 
-
-
-    //-------------------
-
-
     @GetMapping("/search")
     public ResponseEntity<List<ReportDTO>> searchReports(
             @RequestParam(required = false) String patientName,

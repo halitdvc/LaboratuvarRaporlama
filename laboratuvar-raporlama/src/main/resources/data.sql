@@ -15,5 +15,3 @@ INSERT INTO report ( file_number, patient_name, patient_identity_number, diagnos
 ('RPT007', 'Ali Güneş', '78901234567', 'Enfeksiyon', 'Boğaz enfeksiyonu', '2024-11-24',  1),
 ('RPT008', 'Berk Eren', '89012345678', 'Kansızlık', 'Demir eksikliği', '2024-11-25', 2),
 ('RPT009', 'Ayşe Demir', '90123456789', 'Baş dönmesi', 'Migren kaynaklı baş dönmesi', '2024-11-26',  3);
-INSERT INTO report ( file_number, patient_name, patient_identity_number, diagnosis_title, diagnosis_details, report_date, report_image,  laborant_id) VALUES
-('RPT010', 'Halit Kaya', '12345678910', 'Kırık', 'Kol kırığı', '2024-11-27', 'image', 1);

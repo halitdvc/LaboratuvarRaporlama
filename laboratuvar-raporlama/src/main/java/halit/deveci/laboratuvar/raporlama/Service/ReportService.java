@@ -55,7 +55,7 @@ public class ReportService {
         existingReport.setReportImage(reportDTO.reportImage());
         existingReport.setLaborant(laborant);
 
-        Report updatedReport = reportRepository.save(existingReport);  // geri donen raporu return etmek daha dogru
+        Report updatedReport = reportRepository.save(existingReport);  // En güncel raporu return etmek daha doğru
         return reportMapper.toReportDTO(updatedReport);
     }
     public ReportDTO getReportById(Long id) {

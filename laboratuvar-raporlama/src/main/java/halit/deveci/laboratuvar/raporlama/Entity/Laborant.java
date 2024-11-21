@@ -15,8 +15,8 @@ public class Laborant {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String name; // Laborant adı
-    private String surname; // Laborant soyadı
+    private String name;
+    private String surname;
 
     @Column(unique = true, nullable = false, length = 7)
     private String hospitalId; // Hastane kimlik numarası (benzersiz ve 7 haneli)

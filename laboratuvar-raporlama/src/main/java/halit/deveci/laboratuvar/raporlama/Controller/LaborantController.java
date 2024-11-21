@@ -26,11 +26,13 @@ public class LaborantController {
         List<LaborantDTO> laborants = laborantService.getAll();
         return ResponseEntity.ok(laborants);
     }
+    /*
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> deleteLaborant(@PathVariable Long id) {
         laborantService.deleteLaborant(id);
         return ResponseEntity.noContent().build(); // HTTP 204 No Content
     }
+    */
     @PutMapping("/{id}")
     public ResponseEntity<LaborantDTO> updateLaborant(@PathVariable Long id, @RequestBody LaborantDTO laborantDTO) {
         LaborantDTO updatedLaborant = laborantService.updateLaborant(id, laborantDTO);
@@ -41,7 +43,6 @@ public class LaborantController {
         LaborantDTO laborantDTO = laborantService.getLaborantById(id);
         return ResponseEntity.ok(laborantDTO); // HTTP 200 OK
     }
-
     @GetMapping("/search")
     public ResponseEntity<List<LaborantDTO>> searchLaborants(
             @RequestParam(required = false) String name,

@@ -18,20 +18,20 @@ public class Report {
     @Column(unique = true, nullable = false)
     private String fileNumber; // Dosya numarası (benzersiz)
 
-    private String patientName; // Hasta adı ve soyadı
+    private String patientName;
 
     @Column(nullable = false, length = 11)
     private String patientIdentityNumber; // Hasta kimlik numarası (TC, 11 haneli)
 
-    private String diagnosisTitle; // Konulan tanı başlığı
-    private String diagnosisDetails; // Tanı detayları
-    private LocalDate reportDate; // Rapor tarihi
+    private String diagnosisTitle;
+    private String diagnosisDetails;
+    private LocalDate reportDate;
 
     @Lob
     @Column(columnDefinition = "TEXT")
-    private String reportImage; // Fiziksel rapora ait bir fotoğraf (Base64 formatında)
+    private String reportImage; // Fiziksel rapora ait bir fotoğraf
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "laborant_id", nullable = false)
-    private Laborant laborant; // Raporu yazan laborant
+    private Laborant laborant;
 }
